@@ -1,0 +1,63 @@
+{
+  "name": "restaurant-apps-3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-dev": "webpack-dev-server --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js",
+    "lint": "eslint ./src",
+    "lint-fix": "eslint ./src --fix",
+    "karma-init": "karma init",
+    "karma": "karma start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wahyuamirulloh/restaurant-apps-2.git"
+  },
+  "author": "Wahyu Amirulloh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wahyuamirulloh/restaurant-apps-2/issues"
+  },
+  "homepage": "https://github.com/wahyuamirulloh/restaurant-apps-2#readme",
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
+    "babel-loader": "^8.2.3",
+    "copy-webpack-plugin": "^10.0.0",
+    "css-loader": "^6.5.1",
+    "eslint": "^8.3.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.1",
+    "html-webpack-plugin": "^5.5.0",
+    "jasmine-ajax": "^4.0.0",
+    "jasmine-core": "^3.10.1",
+    "karma": "^6.3.9",
+    "karma-chrome-launcher": "^3.1.0",
+    "karma-jasmine": "^4.0.1",
+    "karma-sourcemap-loader": "^0.3.8",
+    "karma-webpack": "^5.0.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.64.2",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.5.0",
+    "webpack-merge": "^5.8.0",
+    "workbox-webpack-plugin": "^6.4.1"
+  },
+  "dependencies": {
+    "idb": "^7.0.0",
+    "regenerator-runtime": "^0.13.9",
+    "workbox-cacheable-response": "^6.4.1",
+    "workbox-core": "^6.4.1",
+    "workbox-expiration": "^6.4.1",
+    "workbox-precaching": "^6.4.1",
+    "workbox-routing": "^6.4.1",
+    "workbox-strategies": "^6.4.1",
+    "workbox-window": "^6.4.1"
+  }
+}

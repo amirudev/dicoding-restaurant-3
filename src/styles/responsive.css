@@ -1,0 +1,92 @@
+@media screen and (min-width: 650px) {
+    .app-bar {
+        justify-content: space-between;
+    }
+   
+    .app-bar .app-bar__brand h1 {
+        font-size: 1.5em;
+    }
+   
+    .app-bar .app-bar__menu {
+        display: none;
+    }
+   
+    .app-bar .app-bar__navigation {
+        position: static;
+        width: fit-content;
+        display: flex;
+        height: fit-content;
+    }
+   
+    .app-bar .app-bar__navigation ul li {
+        display: inline-block;
+    }
+   
+    .app-bar .app-bar__navigation ul li a {
+        display: inline-block;
+        width: 120px;
+        text-align: center;
+        margin: 0;
+        padding: 22px 0;
+    }
+
+    .restaurant-detail .detail-main {
+        padding: 1.5rem;
+    }
+  }
+   
+  @media screen and (min-width: 800px) {
+    .app-bar .app-bar__brand h1 {
+        font-size: 2em;
+    }
+
+    .restaurant-detail {
+        flex-wrap: nowrap;
+        padding: 0 1.5rem;
+    }
+
+    .restaurant-detail .detail-main {
+        padding: 1.5rem 0;
+    }
+    
+    .restaurant-detail .detail-sidebar {
+        padding-left: 1.5rem;
+    }
+  }
+   
+  @media screen and (min-width: 850px) {
+    /* .movies {
+        grid-template-columns: repeat(3, 1fr);
+    } */
+  }
+   
+  @media screen and (min-width: 1200px) {
+    /* .movies {
+        grid-template-columns: repeat(4, 1fr);
+    } */
+
+    .responsive-container {
+        max-width: 1200px;
+    }
+
+    .hero .hero-title {
+        position: absolute;
+        top: 175px;
+    }
+
+    .responsive-container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .restaurant-detail {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+  }
+   
+  @media screen and (min-width: 1600px) {
+    /* .movies {
+        grid-template-columns: repeat(5, 1fr);
+    } */
+  }
