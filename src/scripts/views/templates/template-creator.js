@@ -41,7 +41,7 @@ const createRestaurantItemTemplate = (restaurant) => `<div class="restaurant-ite
                 ${restaurant.city || '-'}</p>
         </div>
         <div class="restaurant-item-button-container">
-            <a href="./#/detail/${restaurant.id}" aria-label="Kunjungi restoran ${restaurant.name || '-'} di ${restaurant.city || '-'}">Kunjungi Restoran</a>
+            <a href="./#/detail/${restaurant.id}" class="visit-restaurant" aria-label="Kunjungi restoran ${restaurant.name || '-'} di ${restaurant.city || '-'}">Kunjungi Restoran</a>
         </div>
     </div>
 </div>`;

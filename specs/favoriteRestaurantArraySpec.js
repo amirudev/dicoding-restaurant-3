@@ -34,15 +34,16 @@ const FavoriteRestaurantsArray = {
     favoriteRestaurants = favoriteRestaurants.filter((restaurant) => restaurant.id !== id);
   },
 
-  searchRestaurant(query) {
+  searchRestaurants(query) {
+    console.log('searching restaurant from array spec');
     return this.getAllRestaurants().filter((restaurant) => {
-      const loweredCaseRestaraurantTitle = (restaurant.title || '-').toLowerCase();
-      const jammedRestaurantTitle = loweredCaseRestaraurantTitle.replace(/\s/g, '');
+      const loweredCaseRestaraurantName = (restaurant.name || '-').toLowerCase();
+      const jammedRestaurantName = loweredCaseRestaraurantName.replace(/\s/g, '');
 
       const loweredCaseQuery = query.toLowerCase();
       const jammedQuery = loweredCaseQuery.replace(/\s/g, '');
 
-      return jammedRestaurantTitle.indexOf(jammedQuery) !== -1;
+      return jammedRestaurantName.indexOf(jammedQuery) !== -1;
     });
   },
 };

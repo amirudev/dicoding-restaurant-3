@@ -12,7 +12,7 @@ const CONFIG = {
 
   DEFAULT_CACHE_EXPIRED: 60 * 60 * 24 * 30,
 
-  MODE: 'PRODUCTION',
+  MODE: 'DEVELOPMENT',
 };
 
 export default CONFIG;

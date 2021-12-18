@@ -14,11 +14,6 @@ const Favourite = {
   },
 
   async afterRender() {
-    // const restaurants = await FavouriteRestaurantDB.getAllRestaurants();
-    // const restaurantContainer = document.querySelector('#restaurant-list');
-    // restaurants.forEach((restaurant) => {
-    //   restaurantContainer.innerHTML += createRestaurantItemTemplate(restaurant);
-    // });
     new FavoriteRestaurantShowPresenter({ view, favoriteRestaurants: FavouriteRestaurantDB });
     new FavoriteRestaurantSearchPresenter({ view, favoriteRestaurants: FavouriteRestaurantDB });
   },

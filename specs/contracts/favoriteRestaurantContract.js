@@ -1,5 +1,5 @@
 const itActsAsFavoriteRestaurantModel = (favoriteRestaurant) => {
-  fit('should return the restaurant that has been added', async () => {
+  it('should return the restaurant that has been added', async () => {
     favoriteRestaurant.putRestaurant({ id: 1 });
     favoriteRestaurant.putRestaurant({ id: 2 });
 
