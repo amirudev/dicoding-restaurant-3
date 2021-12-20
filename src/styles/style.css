@@ -46,6 +46,10 @@ header {
   font-size: 22px;
   user-select: none;
 }
+
+.app-bar .app-bar__brand .img {
+  height: 66px;
+}
   
 .app-bar .app-bar__navigation {
   display: inline-block;
@@ -406,4 +410,19 @@ footer .footer-container p {
 
 .restaurant-detail .review-box .review-box__review-input {
   width: 100%;
+}
+
+.favorite-page input#query {
+  width: 100%;
+  padding: 10px 6px;
+  border: 0;
+  border-radius: 4px;
+}
+
+.favorite-page, input#query:focus{
+  outline: none;
+}
+
+.favorite-page .restaurants__not__found {
+  padding-bottom: 8rem;
 }

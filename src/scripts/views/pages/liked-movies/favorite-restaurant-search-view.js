@@ -1,14 +1,9 @@
 /* eslint-disable class-methods-use-this */
-import { createRestaurantItemTemplate } from '../../templates/template-creator';
+import { createFavoriteSearchboxTemplate, createRestaurantItemTemplate } from '../../templates/template-creator';
 
 class FavoriteRestaurantSearchView {
   getTemplate() {
-    return `
-        <div class="content">
-            <input id="query" type="text">
-            <h2 class="content__heading">Your liked restaurants</h2>
-            <div id="restaurants" class="restaurants"></div>
-        </div>`;
+    return createFavoriteSearchboxTemplate;
   }
 
   runWhenUserIsSearching(callback) {

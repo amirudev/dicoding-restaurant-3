@@ -6,7 +6,10 @@ const Home = {
   async render() {
     return `
         <section class="hero">
-            <img src="./images/hero-image_2.jpg" alt="Gambar hero - chef sedang memasak">
+            <picture>
+              <source media=(max-width: 600px) srcset="./images/hero-image-small.jpg" alt="Gambar hero - chef sedang memasak">
+              <img class="lazyload" src="./images/hero-image-large.jpg" alt="Gambar hero - chef sedang memasak">
+            </picture>
             <div class="hero-title">
                 <div class="hero-title-container responsive-container">
                     <h1>Madang D'Seat Restaurant Finder</h1>

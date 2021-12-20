@@ -2,9 +2,10 @@
 import 'regenerator-runtime';
 import '../styles/style.css';
 import '../styles/responsive.css';
+import 'lazysizes';
+import 'lazysizes/plugins/parent-fit/ls.parent-fit';
 import App from './views/app';
 import swRegister from './utils/sw-register';
-import CONFIG from './global/config';
 
 const app = new App({
   button: document.querySelector('#hamburgerButton'),
@@ -19,7 +20,5 @@ window.addEventListener('hashchange', () => {
 
 window.addEventListener('load', () => {
   app.renderPage();
-  if (CONFIG.MODE === 'PRODUCTION') {
-    swRegister();
-  }
+  swRegister();
 });
