@@ -22,7 +22,7 @@ const createReviewItemList = (reviews) => {
 };
 
 const createRestaurantItemTemplate = (restaurant) => `<div class="restaurant-item">
-    <img class="lazyload" src="${CONFIG.BASE_IMAGE_URL_SMALL + restaurant.pictureId}" alt="Gambar restoran ${restaurant.name || '-'}">
+    <img class="lazyload" data-src="${CONFIG.BASE_IMAGE_URL_SMALL + restaurant.pictureId}" alt="Gambar restoran ${restaurant.name || '-'}">
     <div class="restaurant-item-city">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
             <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
@@ -50,7 +50,7 @@ const createDetailRestaurantItem = (restaurant) => `
     <section class="restaurant-detail">
         <div class="detail-main">
             <div class="detail-main__block">
-                <img class="lazyload" src="${CONFIG.BASE_IMAGE_URL_LARGE + restaurant.pictureId}"></img>
+                <img class="lazyload" data-src="${CONFIG.BASE_IMAGE_URL_LARGE + restaurant.pictureId}" alt="Gambar restoran ${restaurant.name}"></img>
                 <div class="main-title">
                     <div>
                         <h2 class="main-title__title restaurant__name">${restaurant.name}</h2>
@@ -155,28 +155,29 @@ const createReviewedBoxTemplate = (reviewText) => `
     </div>
     `;
 
-const createFavoriteSearchboxTemplate = () => `
-    <section class="hero">
-        <picture>
-            <source media=(max-width: 600px) srcset="./images/hero-image-small.jpg" alt="Gambar hero - chef sedang memasak">
-            <img class="lazyload" src="./images/hero-image-large.jpg" alt="Gambar hero - chef sedang memasak">
-        </picture>
-        <div class="hero-title">
-            <div class="hero-title-container responsive-container">
-                <h1>Madang D'Seat Restaurant Finder</h1>
-                <p>Temukan restoran yang sesuai denganmu disini</p>
-                <p>Menyajikan ribuan restoran pilihan dari seluruh Indonesia yang pastinya menggugah selera kamu, mulai cari sekarang !</p>
+const createFavoriteSearchboxTemplate = `
+    <div class="favorite-page">
+        <section class="hero">
+            <picture>
+                <source media=(max-width: 600px) srcset="./images/hero-image-small.jpg" alt="Gambar hero - chef sedang memasak">
+                <img class="lazyload" data-src="./images/hero-image-large.jpg" alt="Gambar hero - chef sedang memasak">
+            </picture>
+            <div class="hero-title">
+                <div class="hero-title-container responsive-container">
+                    <h1>Madang D'Seat Restaurant Finder</h1>
+                    <input id="query" placeholder="Ketik nama restoran disini">
+                </div>
             </div>
-        </div>
-    </section>
-    <section class="list-restaurant">
-        <div class="responsive-container" id="focusContent">
-            <h2 class="list-restaurant-title">Jelajahi Restoran</h2>
-            <div class="restaurant-list" id="restaurant-list">
+        </section>
+        <section class="list-restaurant">
+            <div class="responsive-container" id="focusContent">
+                <h2 class="list-restaurant-title">Jelajahi Restoran</h2>
+                <div class="restaurant-list" id="restaurants">
 
+                </div>
             </div>
-        </div>
-    </section>`;
+        </section>
+    </div>`;
 
 export {
   createRestaurantItemTemplate,

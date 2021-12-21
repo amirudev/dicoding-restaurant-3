@@ -8,7 +8,7 @@ const Home = {
         <section class="hero">
             <picture>
               <source media=(max-width: 600px) srcset="./images/hero-image-small.jpg" alt="Gambar hero - chef sedang memasak">
-              <img class="lazyload" src="./images/hero-image-large.jpg" alt="Gambar hero - chef sedang memasak">
+              <img class="lazyload" data-src="./images/hero-image-large.jpg" alt="Gambar hero - chef sedang memasak">
             </picture>
             <div class="hero-title">
                 <div class="hero-title-container responsive-container">
