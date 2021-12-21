@@ -56,7 +56,6 @@
     "sass-loader": "^12.4.0",
     "style-loader": "^3.3.1",
     "webpack": "^5.64.2",
-    "webpack-bundle-analyzer": "^4.5.0",
     "webpack-cli": "^4.9.1",
     "webpack-dev-server": "^4.5.0",
     "workbox-webpack-plugin": "^6.4.1"
@@ -66,6 +65,7 @@
     "lazysizes": "^5.3.2",
     "regenerator-runtime": "^0.13.9",
     "sharp": "^0.29.3",
+    "webpack-bundle-analyzer": "^4.5.0",
     "webpack-merge": "^5.8.0",
     "workbox-cacheable-response": "^6.4.1",
     "workbox-core": "^6.4.1",
